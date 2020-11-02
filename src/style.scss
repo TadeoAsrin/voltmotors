@@ -1,0 +1,389 @@
+body {
+    background-color: #313131;
+    margin: 2px;
+
+
+    .navbar {
+
+        background-color: #313131;
+        border-bottom-color: white;
+        border-bottom-style: outset;
+        border-bottom-width: thin;
+
+        .navgeneral {
+            display: flex;
+            justify-content: space-around;
+            height: 83px;
+
+
+            animation-duration: 3s;
+            // animation-name: slide;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+            background-color: transparent;
+
+
+            @keyframes slide {
+                from {
+                    margin-left: 100%;
+                    width: 300%
+                }
+
+                to {
+                    margin-left: 0%;
+                    width: 100%;
+                }
+            }
+
+            .logo {
+                width: 30%;
+
+                .imagenlogo {
+                    width: 83px;
+                    margin-left: 35px;
+                }
+            }
+
+            .modelos {
+                width: 70%;
+                color: white;
+                font-size: xx-large;
+
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-around;
+
+                    font-family: ui-serif;
+                    font-weight: 100;
+                    letter-spacing: 2px;
+
+                }
+            }
+        }
+    }
+
+    .modeloyboton {
+        animation-name: pulse;
+        animation-duration: 10s;
+
+        @keyframes pulse {
+            0% {
+                opacity: 0%;
+
+            }
+
+            100% {
+
+                opacity: 100%;
+            }
+        }
+    }
+
+    .autogeneral {
+        width: 100%;
+        margin-bottom: 2px;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+
+        }
+
+        .contenedorauto {
+            position: relative;
+            margin-bottom: -48px;
+
+            .titulo {
+                position: relative;
+                bottom: 70px;
+                background-color: transparent;
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: flex-end;
+                margin-left: -140px;
+
+
+                p {
+                    margin: 0px;
+                    text-align: center;
+                    font-size: 35px;
+                    color: whitesmoke;
+
+                    &:hover {
+
+                        color: #e60307;
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+            .descrip {
+                position: absolute;
+                left: 40px;
+                display: flex;
+                background-color: #313131;
+                color: whitesmoke;
+                width: 14%;
+                flex-direction: column;
+                background-color: transparent;
+                font-weight: 100;
+                font-family: system-ui;
+
+
+                p {
+                    font-size: x-large;
+                    letter-spacing: 1px;
+                    font-weight: 400;
+                }
+
+                .imagenauto {
+                    position: absolute;
+                    left: 90px;
+                    top: 80px;
+                }
+
+                .botones {
+
+                    width: 100%;
+                    height: fit-content;
+                    font-size: 100px;
+                    border: 2px #e7e7e7;
+                    border-radius: 13%;
+                    background-color: transparent;
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    transition-duration: 0.4s;
+                    font-variant-caps: all-small-caps;
+                    cursor: pointer;
+
+                }
+
+                p {
+                    color: whitesmoke;
+                    text-align: center;
+                }
+
+            }
+
+
+        }
+
+    }
+
+    .autoespecifico {
+        padding-top: 5px;
+        margin-bottom: 3px;
+        height: 750px;
+        display: flex;
+        align-items: flex-end;
+        background-image: url('./volt-auto.png');
+        background-size: cover;
+        justify-content: center;
+
+        .cuadrodescripcion {
+            color: whitesmoke;
+            font-weight: 100;
+            font-family: system-ui;
+
+            p {
+                font-size: 20px;
+                font-weight: 100;
+                font-family: system-ui;
+            }
+        }
+
+        .modeloyboton {
+            background-color: rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+
+            text-align: center;
+            align-self: baseline;
+
+            .modeloauto {
+                font-size: xxx-large;
+                color: #e60307;
+                font-family: system-ui;
+
+                span {
+                    color: white
+                }
+            }
+
+            .detalleauto {
+                font-size: x-large;
+            }
+
+            .boton {
+
+                .button {
+
+
+                    border: 2px #e7e7e7;
+                    border-radius: 13%;
+                    background-color: transparent;
+                    color: #e60307;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 20px;
+                    transition-duration: 0.4s;
+
+                    cursor: pointer;
+
+                }
+
+                .button:hover {
+                    background-color: #e7e7e7
+                }
+            }
+        }
+    }
+
+
+    .comprageneral {
+        width: 100%;
+        background-image: url('./pines.jpg');
+        background-position: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .onucompra {
+            display: flex;
+            width: 100%;
+
+            .onuimagen{
+                display: flex;
+            }
+            .compra {
+                width: 100%;
+                color: #313131;
+                background: rgba(255, 255, 255, 0.3);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
+
+                .adquiri {
+
+                    font-size: 2.3em;
+                    margin-top: 0.3em;
+                }
+
+                .adquiri1 {
+
+                    font-size: 22px;
+                }
+
+                .botonadquiri {
+                    background-color: rgba(201, 76, 76, 0);
+                    border-radius: 25px;
+                    border: 2px solid red;
+                    color: red;
+                    width: 22%;
+                    height: 8%;
+                    padding-top: 4px;
+                    text-align: center;
+                    cursor: pointer;
+
+                }
+
+            }
+        }
+
+        .onu {
+            width: 100%;
+            height: 70%;
+
+            .parrafoonu {
+
+                border-style: double;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+                font-family: system-ui;
+                font-weight: 100;
+                text-rendering: geometricPrecision;
+
+
+
+                p {
+                    font-size: 50px;
+                    color: white;
+                    letter-spacing: 5px;
+
+                    text-align: center;
+                }
+
+                .medioambiente {
+                    font-size: 40px;
+                }
+
+                img {
+                    width: 15%;
+
+                }
+            }
+        }
+    }
+
+    .contactogeneral {
+        width: 100%;
+        height: 128px;
+        background-color: rgba(29, 28, 28, 0.3);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        .contactoespecifico {
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+
+            .contacto {
+                margin-top: 15px;
+                width: 30%;
+                height: 90%;
+
+                justify-content: space-evenly;
+                align-items: center;
+                display: flex;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    width: 60%;
+
+                }
+
+                .imagenlogo {
+                    width: 45%;
+                    height: 60%;
+                }
+            }
+
+            .contacto1 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                color: white;
+            }
+
+
+        }
+    }
+}
